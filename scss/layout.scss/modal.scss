@@ -1,0 +1,90 @@
+.locked{
+    overflow: hidden;
+}
+
+.our-team{
+.our-team__modal-back{
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 80;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    visibility: hidden;
+    transition: .2s;
+    width: 100%;
+}
+.our-team__modal-back.active{
+    visibility: visible;
+    transition: .2s;
+}
+.our-team__modal-content{
+    position: fixed;
+    width: 820px;
+    height: 370px;
+    z-index: 99;
+    opacity: 1;
+    left: calc(50% - 410px);
+    background-color: #FFFFFF;
+    color: 
+    #1C3F54;
+    top: -1000%;
+    transition: .5s;
+    @media(max-width: 1280px){
+        width: calc(320px + (820 - 320) * ((100vw - 320px) / (1280 - 320)));
+        left: calc(50% - calc(160px + (410 - 160) * ((100vw - 320px) / (1280 - 320))));
+        height: 399px;        }
+        @media(max-width: 360px){
+            height: 420px;
+        }
+}
+.our-team__modal-content.active{
+    top: calc(50% - 185px);
+    transition: .5s;
+    @media(max-width: 1280px){
+        top: calc(50% - 200px);
+        transition: .5s;
+    }
+    @media(max-width: 360px){
+        top: calc(50% - 210px);
+        transition: .5s;
+    }
+}
+.our-team__modal-content__wrapper{
+    position: relative;
+    img{
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        @media(max-width: 1280px){
+            top: calc(7px + (12 - 7) * ((100vw - 320px) / (1280 - 320)));
+            right: calc(5px + (16 - 5) * ((100vw - 320px) / (1280 - 320)));
+        }
+    }
+}
+.modal-content__title{
+    padding: 85px 0px 48px 85px;
+    @media(max-width: 1280px){
+        padding-top: calc(50px + (85 - 50) * ((100vw - 320px) / (1280 - 320)));
+        padding-left: calc(13px + (85 - 13) * ((100vw - 320px) / (1280 - 320)));
+        font-size: calc(30px + (14 + 14 * 0.7) * (100vw - 320px) / 1280);
+    }
+}
+.our-team__modal-content__wrapper{
+    p{
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+margin: 0px 15px 0px 85px;
+max-width: 651px;
+@media(max-width: 1280px){
+padding: 0px;
+margin-left: calc(13px + (85 - 13) * ((100vw - 320px) / (1280 - 320)));
+line-height: 120%;
+}
+    }
+}
+}
+
